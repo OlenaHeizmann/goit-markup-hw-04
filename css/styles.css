@@ -79,6 +79,10 @@ body {
   color: #404bbf;
 }
 
+.navitem-studio:hover::after {
+  text-dekoration: underline;
+}
+
 .navitem {
   display: block;
   color: #2e2f42;
@@ -124,8 +128,18 @@ header span {
 }
 /** main */
 .hero {
+  width: 1440px;
   padding: 188px 0;
-  background-color: #2e2f42;
+  /* background-color: #2e2f42; */
+  background-image: linear-gradient(
+      to bottom,
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(/images/people-office\ 1.jpg);
+  /* background-repeat: repeat-y; */
+  background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -137,7 +151,7 @@ header span {
 
 .main-titel {
   font-family: "Roboto", sans-serif;
-  background-color: #2e2f42;
+  background-color: transparent;
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
@@ -172,6 +186,19 @@ header span {
   padding: 120px 0;
 }
 
+.features-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  width: 264px;
+  height: 112px;
+  fill: none;
+  background: #f4f4fd;
+  margin-bottom: 8px;
+}
+
 .section-title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -202,6 +229,7 @@ header span {
 
 .features-list-item {
   width: calc((100% - 72px) / 4);
+  /* height: 224px; */
 }
 
 .section-title {
@@ -213,6 +241,29 @@ header span {
   display: flex;
   gap: 24px;
 }
+.social-media {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.sm-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  transition: background-color;
+}
+
+.sm-link:hover,
+.sm-link:focus {
+  background-color: #404bbf;
+}
+
 .title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -285,7 +336,9 @@ header span {
 
 .portfolio-list-item {
   width: calc((100% - 48px) / 3);
+  position: relative;
 }
+
 .portfolio-item-diskr {
   border-bottom: 1px solid #e7e9fc;
   border-left: 1px solid #e7e9fc;
@@ -319,6 +372,9 @@ header span {
 }
 
 .footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 120px;
   background-color: #2e2f42;
   padding: 100px 0;
 }
@@ -333,4 +389,25 @@ header span {
   color: #f4f4fd;
   text-transform: none;
   max-width: 264px;
+}
+
+.footer-container {
+  margin: 0;
+  padding-left: 156px;
+}
+.footer-social-media-container {
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 16px;
+}
+
+.footer-subtitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  padding-bottom: 16px;
 }
