@@ -156,6 +156,7 @@ header span {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .hero-container {
@@ -419,9 +420,6 @@ header span {
 }
 
 .footer {
-  display: flex;
-  justify-content: flex-start;
-  gap: 120px;
   background-color: #2e2f42;
   padding: 100px 0;
 }
@@ -441,8 +439,6 @@ header span {
 .footer-container {
   display: flex;
   align-items: baseline;
-  margin: 0;
-  padding-left: 156px;
 }
 
 .footer-logo-p {
